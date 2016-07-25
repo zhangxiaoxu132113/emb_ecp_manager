@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miaojie Zhang">
+    <meta name="description" content="招商企业文化平台后台管理系统">
+    <meta name="key" content="后台管理系统">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/other/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/ecpManager.css">
+    <link rel="stylesheet" type="text/css" href="../css/ecpManager-main.css">
+    <link rel="stylesheet" type="text/css" href="../css/ecpManager-topicManager.css">
+    <link rel="stylesheet" type="text/css" href="../css/ecpManager-message.css">
+    <link rel="stylesheet" type="text/css" href="../css/ecpManager-module.css">
+    <link rel="stylesheet" type="text/css" href="../css/ecpManager-userManager.css">
+</head>
+<body ng-app="ecpManager">
+    <!-- Main Contrainer fluid -->
+    <div class="container-fluid">
+        <!-- top navigation -->
+        <div class="navbar main">
+            <!-- logo -->
+            <a class="pull-left">
+                <img src="../img/logo.png" alt="网站logo" width="140" height="30" />
+                <span class="web_title">论坛后台管理系统</span>
+            </a>
+            <!-- navigation -->
+            <div class="navigtor">
+                <ul>
+                    <li><a href="#"><img alt="home" src="../img/home02.png" width="20" height="20"><span>首页</span></a></li>
+                    <li><a href="#"><img alt="home" src="../img/message01.png" width="20" height="20"><span>消息</span></a></li>
+                    <!--<li><a href="#"><img alt="home" src="../img/friend02.png" width="20" height="20"><span>好友</span></a></li>-->
+                    <li><a href="#"><img alt="home" src="../img/setting.png" width="20" height="20"><span>设置</span></a></li>
+                    <li><a href="#">
+                        <img src="../img/userHeader_2.jpg" width="38" href="38" alt="用户头像" class="img-circle"><span>李金洪<b class="caret"></b></span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- top navigation END -->
+        <!-- slider bar & content wrapper -->
+        <div id="wrapper">
+            <div class="wrapper-container">
+                <!-- slider bar menu -->
+                <div class="slider-bar">
+                    <!-- menu -->
+                    <ul>
+                        <li class="home-op-list">
+                            <a href="#main" class="menu-active"><i class="fa fa-desktop"></i><span>看板首页</span><b class="fa fa-angle-down"></b></a>
+                        </li>
+                        <li class="op-list">
+                            <a class="op-list-level-one"><i class="glyphicon glyphicon-list"></i><span>帖子管理</span><b class="fa fa-angle-down"></b></a><!-- 普通帖 & 活动帖 -->
+                            <ul>
+                                <li><a href="#examineOT">普通帖审核</a></li>
+                                <li><a href="#examineOA">活动帖审核</a></li>
+                                <li><a href="#examineOE">帖子编辑</a></li>
+                                <li><a href="#examineOD">活动评分详情</a></li>
+                            </ul>
+                        </li>
+                        <li class="op-list">
+                            <a class="op-list-level-one"><i class="glyphicon glyphicon-user"></i><span>内容管理</span><b class="fa fa-angle-down"></b></a>
+                            <ul>
+                                <li><a href="#activeModule">活动贴模块</a></li>
+                                <li><a href="#interestModule">兴趣帖模块</a></li>
+                                <li><a href="#helpModule">求助帖模块</a></li>
+                                <li><a href="#tucaoModule">吐槽帖模块</a></li>
+                                <li><a href="#picModule">图片模块</a></li>
+                                <li><a href="#hotModule">热门圈子模块</a></li>
+                            </ul>
+                        </li>
+                        <li class="op-list">
+                            <a class="op-list-level-one"><i class="fa fa-group"></i><span>站内信息</span><b class="fa fa-angle-down"></b></a>
+                            <ul>
+                                <li><a href="#messageA">最新活动</a></li>
+                                <li><a href="#messageO">站内广播</a></li>
+                            </ul>
+                        </li>
+                        <li class="op-list">
+                            <a class="op-list-level-one"><i class="glyphicon glyphicon-list"></i><span>用户管理</span><b class="fa fa-angle-down"></b></a>
+                            <ul>
+                                <li><a href="#addUser">添加用户</a></li>
+                                <li><a href="#editUser">编辑用户</a></li>
+                                <!--<li><a href="#delete-user">删除用户</a></li>-->
+                                <li><a href="#detailUser">查看用户信息</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- slider bar menu END -->
+                <!-- content wrapper -->
+                <div class="content-wrapper">
+                    <div ui-view class=" animated fadeInDown">
+
+                    </div>
+                </div>
+                <!-- content wrapper END-->
+            </div>
+        </div>
+        <!-- slider bar & content wrapper END -->
+        <!-- footer -->
+        <footer>
+
+        </footer>
+        <!-- footer END-->
+    </div>
+    <!-- Main Contrainer fluid END-->
+<!-- 脚本文件 -->
+<script src="../js/jquery/jquery.js"></script>
+<script src="../js/angular/angular-1.2.22.min.js"></script>
+<script src="../js/angular/angular-ui-router.js"></script>
+<script src="../js/ecp/breakPage.js"></script>
+<script src="../js/ecpManager.js"></script>
+
+</body>
+</html>

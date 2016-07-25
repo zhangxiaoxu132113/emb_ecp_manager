@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+a {
+	color: #00c5b9;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/*
+Encabezado del Slider
+ ----------------------------------------*/
+.slider-title {
+	text-align: center;
+	margin: 80px 0 40px;
+	font-size: 3.2em;
+	font-weight: 300;
+	color: #FFF;
+}
+
+/**
+ * Contendor del Slider
+ ----------------------------------------*/
+.slider-container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.slider-wrapper {
+	position: relative;
+	z-index: 90;
+	height: 360px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.slider-wrapper li {
+	display: none;
+}
+
+li.slide-current {
+	display: block;
+}
+
+.slider-wrapper li img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+/**
+ * Caption
+ ----------------------------------------*/
+.caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	padding-left:12px;
+	padding-top:20px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.caption p {
+	color: #FFF;
+	font-size: 1.2em;
+	line-height: 1.0em;
+}
+
+/*.slider-wrapper li:hover .caption {*/
+	/*-webkit-transform: translateY(0);*/
+	/*-ms-transform: translateY(0);*/
+	/*-o-transform: translateY(0);*/
+	/*transform: translateY(0);*/
+/*}*/
+
+
+/**
+ * Controles del Slider
+ ----------------------------------------*/
+.slider-controls {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.slider-controls li {
+	background: #415066;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	margin: 0 4px;
+	cursor: pointer;
+}
+
+.slider-controls li.active {
+	background: #00c5b9;	
+}
+
+/**
+ * Autores
+ ----------------------------------------*/
+.authors {
+	margin-bottom: 15px;
+	margin-top: 25px;
+	color: #415066;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+/**
+ * Responsive
+ ----------------------------------------*/
+@media only screen and (max-width: 825px) {
+	.slider-container {
+		width: 100%;
+	}
+
+	.slider-wrapper {
+		height: 260px;
+	}
+}
+
+@media only screen and (max-width: 535px) {
+	.slider-container {
+		padding: 5px;
+		width: 100%;
+	}
+
+	.slider-wrapper {
+		height: 200px;
+	}
+
+	.caption {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 410px) {
+	.slider-wrapper {
+		height: 160px;
+	}
+}

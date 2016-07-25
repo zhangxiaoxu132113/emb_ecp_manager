@@ -1,0 +1,17 @@
+.checkedDiv{
+    height: 100%;
+    width: 98%;
+}
+
+.popupTable{
+    width: 370px;
+    height: 140px;
+    background-color: #d3d3d3;
+    border:2px solid #000000;
+    display: none;
+
+}
+#mess{
+    display: none;
+    color: red;
+}

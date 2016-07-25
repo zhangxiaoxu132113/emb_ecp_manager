@@ -1,0 +1,68 @@
+*{font-size: 13px;margin:0;padding:0;}
+body {
+    background-image: url("../img/wildsee-pizol3.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:100% 100%;
+}
+a:hover{text-decoration: none;}
+.mr-col-3 {float: left;width:23.75%;margin-left:1%;}
+.mr-badge {padding: 3px 5px;text-align: center; border-radius: 3px;background: #666;color:#FFF;}
+
+.container-fluid{padding:0;}
+.row{margin:0;padding:0}
+/*navbar*/
+.navbar.main{
+    height:50px;width:100%;margin:0;position: fixed;top:0;left: 0;
+    border-top:3px solid rgb(229,77,66);border-radius: 0;
+    box-sizing: border-box;padding:.5em;padding:5px 0 1em 0; z-index: 10001;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+    background: url("../img/mosaic-pattern.png") repeat rgba(255, 255, 255, 1.0);
+}
+.navbar.main a{color: #000000;text-decoration: none;padding-left: 1em;}
+.navbar.main a:link{color: #000000!important;text-decoration: none;}
+.navbar.main a:visited{color: #000000!important;text-decoration: none;}
+.navbar.main a:hover{color: #000000!important;text-decoration: none;}
+.navbar.main a:active{color: #000000!important;text-decoration: none;}
+
+.navbar.main .web_title {font-size: 17px;font-weight: bold;line-height: 30px;margin-left:.5em;color:#555}
+
+.navbar.main .navigtor {margin-right: 1em;line-height: 32px;}
+.navbar.main .navigtor  ul {float: right;}
+.navbar.main .navigtor  ul li{list-style: none;float: left;}
+.navbar.main .navigtor  ul li a span{font-weight: bold;font-size: 14px;}
+.navbar.main .navigtor  ul li a img{margin-right: .5em;}
+
+/* slider bar & content wrapper */
+#wrapper {width: 90%;height: 100%;background: rgba(0,0,0,0.35);margin-top:50px;
+    margin-right: 5%;margin-left: 5%;
+}
+#wrapper .wrapper-container{position: relative}
+
+/* main Container */
+.content-wrapper {width: 80%;height: 100%; margin-left:20%;
+    /*background-color: rgba(255,255,255,0.45)*/
+    background-color:rgba(230,232,234,0.75);
+}
+
+/* slider bar menu */
+.slider-bar {padding-bottom:2em;font-size:2em;position: fixed;left: 5%;top: 0;  bottom:0; width: 18%;height:100%; overflow-y: scroll;overflow-x: hidden;margin-top:50px;}
+.slider-bar ul {margin-top:1em;}
+.slider-bar ul li {width: 100%;margin:0;list-style: none;position: relative;box-sizing: border-box}
+.slider-bar ul li a {padding:1em 2em;position: relative;display: block; color: #FFF;cursor: pointer;}
+
+.slider-bar ul li a:hover {background:rgba(255,255,255,.45);!important;text-decoration: none;}
+.slider-bar ul li a span{padding-left: .8em;}
+.slider-bar ul li a b{position:absolute;right:1em;top:0;line-height: 44px;font-weight: 700}
+
+.slider-bar .menu-active {background:rgba(255,255,255,.45);!important;text-decoration: none;border-left:2px solid #FFF;}
+.op-list ul {margin-top:0;display:none;background: rgba(0, 0, 0, 0.156863);}
+.op-list ul li a {padding-left:4em;}
+
+/* footer */
+/*面包屑样式*/
+.tusi{width: 98%;margin-left:1%;margin-top:0.5em;background:#FFF;border-radius:3px;height: 38px;margin-top:0.5em;
+    line-height:38px;box-sizing: border-box;padding-left:1em;}
+.tusi .selectedSpan:before{content: "/\00a0";padding: 0 5px;color: #ccc;}
+

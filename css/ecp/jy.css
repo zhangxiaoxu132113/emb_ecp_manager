@@ -1,0 +1,18 @@
+/**防微博添加文章按钮,需要bootstrap的3.x版本 glyphicon glyphicon-edit */
+.jy-btn-edit {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff!important;
+    border-radius: 2px;
+    background: -webkit-linear-gradient(top, #fa7d3c 0%,#f56010 100%);
+    font-size: 16px;
+    padding: 0px;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+}
+.jy-btn-edit:hover{background: #eb7350;}

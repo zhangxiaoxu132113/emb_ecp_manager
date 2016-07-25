@@ -1,0 +1,17 @@
+/*
+Create By Zhang Miaojie
+@description 该ecp项目中公用的样式表
+*/
+
+/*实现页面加载效果*/
+#preloader { position:fixed;  z-index:2500;  top:0;  left:0;  right:0;  bottom:0;  background-color:#FFF; }
+#status {
+    position:fixed;  z-index:999999;  width:250px;  height:250px;  position:absolute;  left:50%;  top:50%;
+    background-image:url(../other/status.gif);  background-size:32px 32px;  background-repeat:no-repeat;  background-position:center;  margin:-125px 0 0 -125px;
+}
+#status p{  top:60%; }
+#status em{  font-size:10px!important;  display:block;  font-style:normal;  }
+
+/*页面顶部的红色条*/
+
+#ecp_head_bar {background:linear-gradient(90deg, #FF512F 10%, #DD2476 90%);height: 3px}

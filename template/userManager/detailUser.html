@@ -1,0 +1,104 @@
+<div id="detailUser">
+    <div class="row tusi">
+        <span>
+            <span><i class="fa fa-home"></i><span style="padding-left:5px;color:#E54D42;">首页</span></span>
+            <span  class="selectedSpan"><i class="fa fa-desktop"><span style="padding-left: 5px;color:#E54D42;">用户管理</span></i></span>
+            <span  class="selectedSpan"><i class="fa fa-desktop"><span style="padding-left: 5px;color:#E54D42;">查看用户信息</span></i></span>
+        </span>
+    </div>
+    <div class="row mainC">
+        <div class="mainB">
+            <!-- 搜索内容 -->
+            <div class="searchF">
+                <div class="searchT">
+                    <h4>搜索帖子</h4>
+                </div>
+                <div class="searchC"> <!-- search from -->
+                    <form action="" method="post">
+                        <div> <!-- search type  -->
+                            <span style="line-height: 32px;">搜索类型 : </span>
+                            <select class="ui-select">
+                                <option selected>姓名</option>
+                                <option>编号</option>
+                                <option>部门</option>
+                            </select>
+                        </div>
+                        <div style="padding-top:1em;">
+                            <span>搜索内容 : </span>
+                            <input type="text"/>
+                        </div>
+                        <button style="margin-top:1em;" class="btn btn-success pull-right">搜索</button>
+                        <div style="clear: both;display: block;padding:0;margin:0;"></div>
+                    </form>
+                </div>
+            </div>
+            <!-- 搜索结果列表 -->
+            <div class="searchL">
+                <div class="searchT">
+                    <h4>搜索列表</h4>
+                </div>
+                <div class="searchR"> <!-- search from -->
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>姓名</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><span class="mr-badge">1</span></td>
+                            <td>陈信宏</td>
+                            <td><button class="btn btn-success" onclick="showUserDetailInfo()">查看详情</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 隐藏的遮罩层 -->
+    <!-- 编辑页面 -->
+    <div class="op-bg" style="display: none">
+        <div class="op-F animated bounceIn" style="padding-bottom: 10px">
+            <div class="op-C">
+                <div class="op-T">
+                    <h4 style="color:#66757f;font-size: 20px">
+                        <span class="glyphicon glyphicon-user" style="margin-right: 0.5em"></span>
+                        <span style="font-size: 20px">陈信宏</span>个人信息
+                    </h4>
+                </div>
+                <div class="op-detail" style="margin-top: 1em;">
+                    <div>
+                        <div class="user-info">
+                            <div class="user-info-item"><span>编号:</span><span>23972</span></div>
+                            <div class="user-info-item"><span>姓名:</span><span>陈信宏</span></div>
+                            <div class="user-info-item"><span>昵称:</span><span>陈大诗人</span></div>
+                            <div class="user-info-item"><span>所属部门:</span><span>系统运行室</span></div>
+                            <div class="user-info-item"><span>手机号码:</span><span>13734343489</span></div>
+                            <div class="user-info-item"><span>座机电话:</span><span>8976534</span></div>
+                            <div class="user-info-item"><span>总发帖:</span><span>8</span></div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <a class="btn btn-success mw-cancel pull-right">关闭</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".op-detail .mw-cancel").click(function(){
+        $(".op-bg").css("display","none");
+    });
+    $(".searchR .edit-p").click(function(){
+        $(".op-bg").css("display","block");
+    });
+    var showUserDetailInfo = function(){
+        $(".op-bg").css("display","block");
+    }
+</script>

@@ -1,0 +1,100 @@
+<div id="messageA">
+    <div class="row tusi">
+        <span>
+            <span><i class="fa fa-home"></i><span style="padding-left:5px;color:#E54D42;">首页</span></span>
+            <span  class="selectedSpan"><i class="fa fa-desktop"><span style="padding-left: 5px;color:#E54D42;">站内信息</span></i></span>
+            <span  class="selectedSpan"><i class="fa fa-desktop"><span style="padding-left: 5px;color:#E54D42;">最新活动</span></i></span>
+        </span>
+    </div>
+    <!-- 最近活动列表 -->
+    <div class="row mainC">
+        <div class="mainB">
+            <div class="messageList">
+                <div class="messageLT">
+                    <h4>最近活动列表</h4>
+                </div>
+                <div class="messageLC">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <td class="col-md-1">编号</td>
+                            <td class="col-md-5">标题</td>
+                            <td class="col-md-2">作者</td>
+                            <td class="col-md-3" style="text-align: center">报名时间</td>
+                            <td class="col-md-1">操作</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="col-md-1"><span class="mr-badge red-bg">1</span></td>
+                            <td class="col-md-5">这是标题,标题我最大</td>
+                            <td class="col-md-2">周魏红</td>
+                            <td class="col-md-3">2009-12-09 - 2009-12-12</td>
+                            <td class="col-md-1"><input type="checkbox" name="selectedA" value=""></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-1"><span class="mr-badge red-bg">1</span></td>
+                            <td class="col-md-5">这是标题,标题我最大</td>
+                            <td class="col-md-2">周魏红</td>
+                            <td class="col-md-3">2009-12-09 - 2009-12-12</td>
+                            <td class="col-md-1"><input type="checkbox" name="selectedA" value=""></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-success pull-right" style="margin-top:20px;">发布</button>
+                    <span class="pull-right opSelected" style="margin-top:20px;">
+                        <span>全选</span><input type="checkbox" name="operatorCheck" id="operatorAC">
+                    </span>
+                    <div style="clear: both;display: block;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 已发布活动 -->
+    <div class="row mainC">
+        <div class="mainB">
+            <div class="messageList">
+                <div class="messageLT">
+                    <h4>已发布活动</h4>
+                </div>
+                <div class="messageLC">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <td class="col-md-1">编号</td>
+                                <td class="col-md-5">标题</td>
+                                <td class="col-md-2">作者</td>
+                                <td class="col-md-3" style="text-align: center">报名时间</td>
+                                <td class="col-md-1">操作</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-md-1"><span class="mr-badge red-bg">1</span></td>
+                                <td class="col-md-5">这是标题,标题我最大</td>
+                                <td class="col-md-2">周魏红</td>
+                                <td class="col-md-3">2009-12-09 - 2009-12-12</td>
+                                <td class="col-md-1" style="padding-left: 0"><button class="btn btn-warning">移除</button></td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-1"><span class="mr-badge red-bg">1</span></td>
+                                <td class="col-md-5">这是标题,标题我最大</td>
+                                <td class="col-md-2">周魏红</td>
+                                <td class="col-md-3">2009-12-09 - 2009-12-12</td>
+                                <td class="col-md-1" style="padding-left: 0"><button class="btn btn-warning">移除</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#operatorAC").change(function(){
+        //$('input[name=selectedA]').attr("checked",this.checked); 不要使用
+        $('input[name=selectedA]').prop("checked",this.checked);
+
+    });
+</script>

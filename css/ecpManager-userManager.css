@@ -1,0 +1,52 @@
+#addUser {margin:0;padding:0.5em 0;}
+#edit-user{margin:0;padding:0.5em 0;}
+#detailUser{margin:0;padding:0.5em 0;}
+#addUser .mainC,#edit-user .mainC,#detailUser .mainC {min-height: 680px;}
+#addUser .mainC .mainB,#edit-user .mainC .mainB,#detailUser .mainC .mainB
+{width: 98%;height:100%;margin-top:1%;padding:0.5em;margin-left:1%;background:rgb(230,232,234)}
+
+.ecp-size3of5 {width:59%!important;}
+.ecp-size2of5 {width: 40%!important;}
+
+.ecp-Grid {display: block;margin:0;padding:0;text-align: left}
+.ecp-Grid .ecp-Grid-withGutter{margin:0 -5px}
+.ecp-Grid-cell {display: inline-block;margin:0;padding:0;width: 100%;font-size: 14px;text-align: left;box-sizing: border-box;vertical-align: top}
+
+.text-input {border:1px solid #ccd6dd;height:20px;width:266px;box-shadow: inset 0 1px 0 #eee,#fff 0 1px 0 ;
+    display: inline-block;padding:4px;margin:0;outline: 0;background:#FFF;border-radius: 3px;font-size: 13px;line-height: 20px;}
+.profile-info-item{margin-bottom: 0.5em;display: table-row}
+.profile-info-item > span,input[type=text],input[type=password]{display: table-cell;height: 32px}
+.profile-info-f,.profile-c{
+    background: #fff;
+    position: relative;
+    padding: 0.5em;
+    padding-bottom: 2em;
+    /*width: 95%;*/
+    border-radius: 4px;height: 300px;
+}
+.profile-info-item > span{padding-right: 0.5em;color: #66757f;}
+.profile-info-title{margin-bottom: 0.5em;color: #66757f; padding: 0.5em; border-bottom: 1px solid #e6e8ea; display: block; }
+#addUser-title {font-size: 20px;padding:0.5em;background:#fff;margin-bottom:0.5em;color: #66757f}
+.profile-info-item input[type=password]:focus{
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05),0 0 8px rgba(82,168,236,0.6);
+    border: 1px solid #ccd6dd;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+.profile-info-item input[type=text]:focus{
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05),0 0 8px rgba(82,168,236,0.6);
+    border: 1px solid #ccd6dd;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+
+.searchR table th,td{width: 33.3%;}
+.searchR table th:last-child,td:last-child{text-align: center}
+.user-info-item{margin: 0.5em 0 0.5em 0;font-size: 18px;font-weight: 500;display: table-row;height: 34px}
+.user-info-item >span {font-size: 18px;display: table-cell;padding-right: 1em}
+.user-info-item > span:last-child {font-size: 18px;font-weight: 200;padding-left: 1em}

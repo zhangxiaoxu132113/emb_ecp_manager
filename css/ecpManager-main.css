@@ -1,0 +1,100 @@
+/*main.html*/
+/*commons*/
+.manager-main-title {margin:0 0 0 10px; padding: 10px; display: inline-block; border-bottom: 2px solid #E54D42;color:#666;}
+.manager-main-content {height: 350px;border-top:2px solid rgba(0,0,0,0.1);padding:1em;position: relative}
+
+#manager-main{margin:0;padding:0.5em 0;}
+/*用户访问量面板*/
+.user-pv{float:left;width:67%;background:#FFF;margin-left: 1%;border-radius:3px;box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(212, 212, 212, 0.68);}
+.user-pv h5 {margin:0 0 0 10px; padding: 10px; display: inline-block; border-bottom: 2px solid #E54D42;color:#666;}
+.user-pv h5 span {padding-left: 0.5em}
+.user-pv .content {height: 350px;border-top:2px solid rgba(0,0,0,0.1);padding:1em;}
+/*用户活跃度排名面板*/
+.user-sort{float: left;width: 30%;background:#FFF;margin-left:1%;border-radius:3px;box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1); }
+.user-sort table tr td {line-height: 32px;}
+.user-sort table td img{margin-right: 5px;}
+/*室组访问量面板*/
+.room-pv{float: left;width: 98%;background: #FFF;margin-left:1%;margin-top:0.5em;border-radius:3px;box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(212, 212, 212, 0.68);}
+/*.room-pv .content {height: 350px;border-top:2px solid rgba(0,0,0,0.1);}*/
+/*.room-pv h5{margin:0 0 0 10px; padding: 10px; display: inline-block; border-bottom: 2px solid #E54D42;color:#666;}*/
+.room-pv h5 span{padding-left: 0.5em}
+/*室组活跃度排名面板*/
+.room-sort{float:left;width:29%;margin-left:2%;background:#FFF;margin-top:0.5em;border-radius:3px;box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);}
+
+.topic-op {float:left;width:69%;background:#FFF;margin-left: 1%;border-radius:3px;box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(212, 212, 212, 0.68);}
+
+.topic-module {width:35%;height:90%;display: inline-block;text-align: center;background:#FFF;}
+.ac-module {position: absolute;left: 0;top:0;}
+.in-module {position: absolute;right: 0;top:0;}
+.he-module {position: absolute;left: 0;bottom:0;}
+.tu-module {position: absolute;right: 0;bottom:0;}
+.module-circle-show {position: absolute;top:50%;left:50%;margin-top: -100px;margin-left: -100px; border-radius: 50%;
+    width:200px;height:200px;box-sizing: border-box;z-index: 1000}
+.ac-title {text-align: center;
+    display: block;
+    font-size: 20px;
+    min-height: 85px;
+    line-height: 85px;
+    font-weight: 700;
+    color: #FFF;
+    background: rgb(252,188,42);}
+.in-title {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    min-height: 85px;
+    line-height: 85px;
+    font-weight: 700;
+    color: #FFF;
+    background: #00aced;
+}
+.he-title {
+text-align: center;
+    display: block;
+    font-size: 20px;
+    min-height: 85px;
+    line-height: 85px;
+    font-weight: 700;
+    color: #FFF;
+    background: rgb(188,236,109)
+}
+.tu-title {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    min-height: 85px;
+    line-height: 85px;
+    font-weight: 700;
+    color: #FFF;
+    background: #d34836
+}
+
+.post-sort {float:left;width:28%;background:#FFF;margin-left: 1%;border-radius:3px;box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(212, 212, 212, 0.68);}
+.post-sort ul li{list-style: none;margin-bottom:0.5em;font-size: 1.6em;}
+.post-sort ul li a:hover {cursor: pointer;color:#E54D42;}
+.post-sort ul li a span{margin-left:0.8em;}
+.post-sort .manager-main-content {overflow-y: auto}
+/*统计数据面板count info*/
+.count-info {background:rgb(230,232,234)}
+.info-box {min-height: 140px;padding:20px;color:#FFF;box-sizing: border-box}
+.info-box .count{font-weight: 700;font-size: 34px;}
+.info-box i {
+    display: block;
+    height: 100px;
+    font-size: 60px;
+    line-height: 100px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    /*margin-right: 20px;*/
+    padding-right: 20px;
+    color: rgba(255, 255, 255, 0.75);
+}
+.red-bg {background:#d95043;}
+.green-bg {background:#26c281}
+.blue-bg {background:#57889c}
+.ping-bg {background:#e65097}

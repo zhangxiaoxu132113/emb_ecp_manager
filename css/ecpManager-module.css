@@ -1,0 +1,23 @@
+/*MrWater*/
+#activeModule {margin:0;padding:0.5em 0;min-height: 600px;}
+h1,h2,h3,h4,h5{margin:0;padding:0}
+#activeModule .mainC .mainB {width: 98%;height:100%;margin-top:1%;padding:0.5em;margin-left:1%;background:rgb(230,232,234)}
+.level_one {background:#FFF;padding:0.5em;}
+.level_one_header {padding-bottom: 0.5em; padding-top: 0.5em; border-bottom: 1px solid #e6e8ea; margin-bottom: 0.5em; }
+.level_one_header_title h2{margin:0;padding:0;color:rgb(41,47,51);font-size:16px;font-weight:300}
+.mw-Grid {display: block;margin:0;padding:0}
+.mw-Grid .Grid-Cell{display: inline-block;box-sizing: border-box;margin:0;padding:0;font-size: 14px;width:100%;vertical-align: top}
+.u-size3of4 {width: 75%!important; display: inline-block;overflow-x: hidden;position:relative;vertical-align: top}
+.u-size1of4 {width: 24%!important; display: inline-block;vertical-align: top}
+.u-size3of4 .level_one_obj {
+    position: absolute;top:0;
+}
+.level_one_topic_title{font-weight: 500; font-size: 16px; margin-bottom: 0.5em;}
+.level_one_opertor {left: 1em;bottom:0.1em;position:absolute}
+.level_one_opertor button{outline: none}
+.level_one_title{margin:0;padding:0;color:rgb(41,47,51);font-size:16px;font-weight:300;margin-bottom:0.5em}
+.u-size1of4 table{width:100%;}
+.u-size1of4 table tr {height: 56px;line-height: 56px}
+.u-size1of4 table tr > td:last-child{float: right}
+.level_btn {padding:3px 7px;font-size: 14px}
+.level_one_topic_imgs img{margin-right:0.5em;}

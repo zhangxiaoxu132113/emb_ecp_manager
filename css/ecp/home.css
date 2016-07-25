@@ -1,0 +1,107 @@
+/*
+@author: Miaojie Zhang
+@description:首页面的css样式表
+@createOn: 2016-03-14
+*/
+/*ecp开头为自己定义的样式表*/
+* {margin:0;padding:0;font-family: "微软雅黑", "新宋体", Arial;}
+ul li{list-style: none}
+a:link{color: #000!important;}
+a:visited{color: #000!important;}
+a:hover{color:rgb(220,60,69)!important;}
+a:active{color:rgb(220,60,69)!important;}
+.container{padding-left: 8%;padding-right: 8%;margin-bottom:3px;}
+header {padding-top:5px;}
+
+hr{margin:-2px;border-color: rgb(213,213,213);}
+
+
+
+/*页面头部的样式表*/
+.dropdown ul li a:hover{
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition:all 0.3s ease-out; background-color: rgb(239,239,243) ; color:rgb(220,60,69);  }
+.dropdown ul li a span{font-size:10px;background-color:rgb(220,60,69);}
+.dropdown-menu li{font-size:12px;}
+.ecp-login-label {cursor: pointer;font-weight: lighter;font-size: 1.1em}
+.ecp-login-label :hover {color:rgb(220,60,69)}
+/*导航栏*/
+
+/*.ecp-navgation .row{padding-left: 10px;padding-right: 10px;box-sizing: border-box;height: 42px}--修改*/
+.ecp-navgation .row{box-sizing: border-box;height: 42px}
+.ecp-navgation ul{border-bottom: 0 solid rgb(213,213,213);}
+.ecp-navgation ul li a .active{
+    padding-bottom: 3px;color: rgb(220,60,69);font-weight: bold}
+.ecp-navgation ul li a:hover{color: rgb(220,60,69);border-bottom: 2px solid rgb(220,60,69)}
+
+/*bannder条*/
+.ecp-banner {margin-top: 10px;margin-bottom:10px;}
+
+/*活动模块*/
+.ecp-shuffleDevice img{width: 100%;height: 100%}
+.ecp-shuffling-device {height: 360px;width: 560px;}
+.ecp-activity .ecp-activity-title {  margin-top: 5px;margin-left: 10px;font-size: 22px; color: #333;  }
+.ecp-activity .ecp-activity-content {font-size: 14px;
+    margin: 0 10px 10px 10px; color: #999;line-height: 1.6em;}
+.ecp-activity .ecp-activity-content span{float:right;padding-right: 10px; box-sizing: border-box;}
+.ecp-activity .ecp-activity-content span a{text-decoration:underline }
+.ecp-activity .ecp-activity-list {padding-left: 2px;}
+.ecp-activity .ecp-activity-list li{line-height: 1.7em; color: #333;}
+.ecp-activity .ecp-activity-pic{width:30%; float: left;
+    margin-left: 5px;margin-right:5px;line-height: 18px;font-size: 12px}
+.ecp-activity .ecp-activity-pic img{margin:0 0 10px 0;vertical-align: middle;width:125px ;height: 94px;}
+
+.ecp-mainbody{margin-bottom: 10px;}
+.ecp-mainbody .ecp-mainbody-left{padding-left: 0px; }
+
+/*定义每一个模块的头部显示内容*/
+.ecp-module-header{ position: relative;}
+.ecp-module-underline{border: 1px rgb(220,60,69) solid;margin:0 45px 8px 15px;}
+.ecp-module-title{ display:inline-block; color: rgb(220,60,69); font-size: 18px;
+    border-bottom: 2px rgb(220,60,69) solid;margin:0 15px 0 15px; padding-bottom: 5px
+}
+.ecp-module-more {color:rgb(220,60,69); position: absolute;right: 45px;bottom: 10px;}
+
+/*兴趣模块*/
+.ecp-module-interest{padding-left: 15px}
+.ecp-module-interest .ecp-module-interest-article img{display: block;float: left;margin-right: 10px ;}
+.ecp-module-interest .ecp-module-interest-article p{line-height: 1.8em;color: rgb(73,73,73);}
+.ecp-module-interest .ecp-module-interest-list{padding-left: 0;}
+.ecp-module-interest .ecp-module-interest-list li a:link{color: #ffffff!important;}
+.ecp-module-interest .ecp-module-interest-list li a:hover{color: #ffffff!important;  background-color: rgb(41,166,134);cursor: pointer;}
+.ecp-module-interest .ecp-module-interest-list ul{list-style: none; line-height: 2.4em}
+.ecp-module-interest-tag {background-color:rgb(220,60,69);color: #ffffff; padding: 3px 8px;}
+a.ecp-module-interest-tag :link{color:#FFFFFF;}
+/*吐槽模块*/
+.ecp-module-teasing ul{list-style: none; padding-right: 15px;padding-left: 15px;}
+.ecp-module-teasing ul li{margin-bottom: 10px; line-height: 26px}
+.ecp-module-teasing ul li a{font-size: 16px;}
+.ecp-module-teasing .ecp-module-teasing-replyCount { text-align: center; display:inline-block; color: rgb(220,60,69);
+    border:1px rgb(220,60,69) solid; margin-right: 10px;width:40px; height: 26px;}
+
+.ecp-module-teasing .ecp-module-teasing-date{margin-right: 30px;}
+
+/*求助模块*/
+.ecp-module-help .ecp-module-underline{margin:0 15px 8px 15px;}
+.ecp-module-help .ecp-module-more{right: 15px;}
+.ecp-module-help .ecp-module-help-list  li{margin-bottom: 15px;
+    background: no-repeat url('../../../content/home/arrow_cricle.png') 0 10%;}
+.ecp-module-help .ecp-module-help-list-one {display: inline-block;box-sizing: border-box;padding-left: 15px;}
+
+/*热门圈子*/
+.ecp-module-popular .ecp-module-underline{margin:0 15px 8px 15px;}
+.ecp-module-popular .ecp-module-more{right: 15px;}
+.ecp-module-popular .ecp-module-popular-list {padding-left: 15px}
+.ecp-module-popular .ecp-module-popular-list .ecp-module-popular-list-one{margin-bottom: 4px;}
+.ecp-module-popular-list-one-pic {float: left; padding-left: 15px;}
+.ecp-module-popular .ecp-module-popular-list .ecp-module-popular-list-one img {margin-right: 0;}
+.ecp-module-help-list-one-text {float: left;padding-left: 10px;}
+.ecp-module-help-list-one-text p{line-height: 1.6em}
+
+/*红娘模块*/
+.ecp-module-communicating-header{padding-left: 15px}
+
+/*页脚内容*/
+footer p{text-align: center; margin-top:20px;
+    color: rgb(38,38,38);}

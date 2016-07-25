@@ -1,0 +1,36 @@
+/**/
+a:hover{text-decoration:none;cursor:pointer;}
+a:link{ color: #000;}
+.ecp-module-content{  padding: 15px; }
+.ecp-module-list-header {}
+.ecp-module-list-header ul li{list-style: none;float: left;margin-right: 15px;}
+.all-module-list-key{  padding: 8px 15px;  background-color: rgb(213,213,213);  color: #000;}
+.ecp-module-list-header .list-style button{color: #ffffff;background-color:rgb(29,213,131);
+    border-radius: 3px;  padding: 6px 15px;outline: none}
+.ecp-module-list-header .list-style button:hover{  transition: all 1s;  background-color: rgb(26,192,117); color:#ffffff;  }
+
+.ecp-module-list-header .col-md-6{padding-right:0;
+    padding-left:0;}
+.ecp-module-list-header .list-style-activity button{  padding: 6px 15px;border-radius: 3px;
+    background-color: rgba(222,64,34,0.85);color:#ffffff; outline: none;
+}
+.ecp-module-list-header .list-style-activity button:hover{
+    transition: all 3s ease-out;background-color: rgb(220,60,69);border-radius: 3px;
+}
+.ecp-module-list-header .dropdown-menu li a {  background-color: #ffffff; }
+.ecp-activity-participants img{width: 28px;height: 28px;}
+.module-categary{min-width: 100px}
+.module-categary-li{ margin-right:0;}
+.module-categary li a{ background-color:#ffffff; font-size:13px; padding: 5px 23px;  }
+.alert{margin-bottom:0; text-align: center;}
+/*设置table样式*/
+table tr{height: 50px;line-height: 50px;}
+table th{color:rgb(113,113,113);}
+table tbody tr td{vertical-align: center;font-size: 15px}
+
+.form-control {
+    background: none !important;
+    border: 1px solid rgb(220,60,69) !important;
+    border-radius: 20px !important;
+    box-shadow: none !important;
+}
